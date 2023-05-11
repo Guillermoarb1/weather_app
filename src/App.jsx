@@ -84,7 +84,7 @@ function App() {
               <h3>{weather.weather[0].description}</h3>
             </div>
             <div className="temperature">
-              <h1>34 °c</h1>
+              <h1>{Math.floor(weather.main.temp)} °c</h1>
             </div>
           </div>
 
