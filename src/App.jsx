@@ -49,7 +49,7 @@ function App() {
 
           <div className="section section__temperature">
             <div className="icon">
-              <h3>{weather.name}</h3>
+              <h3>{weather?.name}</h3>
               
               <svg width="50" height="50" viewBox="0 0 197 196" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_321)">
@@ -81,10 +81,10 @@ function App() {
                 </clipPath>
                 </defs>
               </svg>
-              <h3>{weather.weather[0].description}</h3>
+              <h3>{weather?.weather[0].description}</h3>
             </div>
             <div className="temperature">
-              <h1>{Math.floor(weather.main.temp)} °c</h1>
+              <h1>{Math.floor(weather?.main.temp)} °c</h1>
             </div>
           </div>
 
